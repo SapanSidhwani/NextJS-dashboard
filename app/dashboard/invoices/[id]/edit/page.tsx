@@ -10,6 +10,11 @@ reach out for it when you want to handle more specific errors!
 
 */
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Edit Invoice',
+};
 
 export default async function Page({ params }: { params: { id: string } }) {
 
